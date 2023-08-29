@@ -27,7 +27,8 @@ Route::get('/', function () {
 
 Route::get('/pages', [PageController::class, 'index'])->name('page.index');
 Route::get('/pack', [PackController::class, 'index'])->name('pack.index');
-Route::get('/pack/{id}', [VacancieController::class, 'show'])->name('pack.show');
+// Route::get('/vacancie/{id}', [VacancieController::class, 'show'])->name('pack.show');
+Route::get('/pack', [PackController::class, 'show'])->name('pack.show');
 Route::get('/aver', [AverController::class, 'index'])->name('aver.index');
 
 Route::controller(AuthController::class)->group(function(){
@@ -45,7 +46,7 @@ Route::controller(AuthController::class)->group(function(){
 
 Route::middleware('auth')->group(function(){
     // route::get('dashboard', function(){
-    
+
     //     return view('dashboard');
     // })->name('dashboard');
     Route::get('/auth', [AuthController::class, 'dashboard'])->name('dashboard');

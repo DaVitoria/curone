@@ -9,6 +9,9 @@
     <span class="">
       <a href="{{route('aver.index')}}" class="btn btn-outline-light btn-rounded get-started-btn">Ver</a><br>
     </span>
+    <span class="">
+        <a href="{{route('pack.show')}}" class="btn btn-outline-light btn-rounded get-started-btn">Another</a><br>
+      </span>
     </div>
     <table class="table table-sm mr-4" id="table">
       <thead class="table-dark">
@@ -32,12 +35,13 @@
             <a class="btn btn-success btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target="#add" href="">Concorrer<i class="mdi mdi-reload btn-icon-prepend"></i></a>
           </td>
         </tr>
-        @endforeach
+
       </tbody>
     </table>
 
   </di>
   </div>
+
   <div class="modal fade" id="description" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -49,7 +53,7 @@
                 <!-- Conteúdo do modal -->
                 <p>Concurso número {{ $vacancie->nrvacancie}}</p>
                 <p>{{$vacancie->description}}</p>
-    
+                @endforeach
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -57,6 +61,7 @@
         </div>
     </div>
 </div>
+
 {{-- Modal create --}}
 <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -74,7 +79,7 @@
                 <label>Nome</label>
                 <input type="text" name="first_name" class="form-control p_input" placeholder="Digite os primeiros nomes">
                 </div>
-            
+
                 <div class="col">
                 <label>Apelido</label>
                 <input type="text" name="last_name" class="form-control p_input" placeholder="Digite o seu apelido">
@@ -85,7 +90,7 @@
                 <label>Data de Nascimento</label>
                 <input type="date" name="date" class="form-control p_input" placeholder="Digite a data de nascimento">
                 </div>
-            
+
                 <div class="col my-1">
                 <label>Email</label>
                 <input type="email" name="email" placeholder="Digite oo seu e-mail" class="form-control p_input @error('email') é inválido @enderror value="{{old('email')}}">
@@ -95,7 +100,7 @@
                     </span>
                 @enderror
                 </div>
-            </div> 
+            </div>
             <div class="row g-3">
                 <div class="col">
                     <label>Endereço</label>
