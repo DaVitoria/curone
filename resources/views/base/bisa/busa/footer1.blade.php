@@ -27,6 +27,8 @@
     </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="{{asset('assets/vendors/js/vendor.bundle.base.js')}}"></script>
 <script src="{{asset('assets/js/modal-demo.js')}}"></script>
 <script src="{{asset('assets/js1/modal.js')}}"></script>

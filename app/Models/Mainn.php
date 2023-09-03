@@ -18,9 +18,14 @@ class Mainn extends Model
         'file',
         'category',
         'vacancie_id',
+        'result_id',
     ];
 
     public function vacancie(){
         return $this->belongsTo(Vacancie::class, 'vacancie_id');
+    }
+
+    public function result(){
+        return $this->belongsTo(Result::class, 'result_id');
     }
 }
