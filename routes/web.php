@@ -70,6 +70,7 @@ Route::middleware('auth')->group(function(){
 Route::get('/candidates/create', [CandidateController::class, 'create'])->name('candidate.create');
 Route::get('pdf-export', [CandidateController::class, 'exportPdf'])->name('gerarPdf');
 Route::post('/candidates', [CandidateController::class, 'store'])->name('candidate.store');
+Route::get('/candidates', [CandidateController::class, 'download'])->name('downloadFile');
 Route::get('/candidates/{id}/edit', [CandidateController::class, 'edit'])->name('candidate.edit');
 Route::put('/candidates/{id}', [CandidateController::class, 'update'])->name('candidate.update');
 Route::get('/candidates/{id}', [CandidateController::class, 'show'])->name('candidate.show');

@@ -7,7 +7,7 @@
       <div class="card col-lg-7 mx-auto">
         <div class="card-body px-5 py-5">
             @include('messages')
-          <h3 class="card-title text-left mb-3">Adcionar dados do candidato</h3>
+          <h3 class="card-title text-left mb-3">CANDIDATURA</h3>
           <form class="form-sample" method="post" action="{{route('candidate.store')}}">
             @csrf
             <div class="row g-3">
@@ -75,7 +75,7 @@
                 </div>
               <div class="row g-3">
                 <div class="col">
-                  <label for="result_id">Resultados</label>
+                  <label for="result_id">Entrada</label>
                   <select name="result_id" id="result_id" class="form-control" required>
                       <option value="Em Progresso">Selecione</option>
                           @foreach ($result as $result)

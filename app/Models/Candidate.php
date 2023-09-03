@@ -20,6 +20,8 @@ class Candidate extends Model
         'result_id',
     ];
 
+    
+
     public function vacancie(){
         return $this->belongsTo(Vacancie::class, 'vacancie_id');
     }

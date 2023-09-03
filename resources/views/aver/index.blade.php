@@ -23,6 +23,7 @@
                       <th>Vagas</th>
                       <th>Resultados</th>
                       <th>Data de Submissão</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -39,6 +40,7 @@
                         <td> <div class="badge badge-outline-warning">{{$value->result->status}}</div>
                         </td>
                         <td>{{date('d-F-Y',strtotime($value->created_at))}}</td>
+                        <td><a href="{{route('downloadFile', $value->file)}}" ><i class="bx bx-download"></i>Baixar</a></td>
                     </tr>
                     @endforeach
                   </tbody>

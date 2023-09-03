@@ -95,4 +95,14 @@ class CandidateController extends Controller
         $candidate->delete();
         return redirect()->route('candidates')->with('success', 'Candidato eliminado com sucesso!');
     }
+
+        public function download($filename){
+            $filename= Candidate::all();
+            $filePath = storage_path("app/database/migration/{$filename}");
+            if (file_exists($filePath)) {
+                return response()->download($filePath);
+            }
+            return back()->with('error', 'O arquivo não foi encontrado.');
+    }
+
 }
