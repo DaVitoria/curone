@@ -71,7 +71,7 @@
     <!-- End Main Top -->
 
     <!-- Start All Title Box -->
-    <div class="all-title-box" style="background-image: url('assets/images1/all.jpg')" tabindex="-1">
+    <div class="all-title-box" style="background-image: url('assets/images1/diplom.jpg')" tabindex="-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

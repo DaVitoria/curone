@@ -15,7 +15,7 @@
                 <label>Nome</label>
                 <input type="text" name="first_name" class="form-control p_input" placeholder="Digite os primeiros nomes">
                 </div>
-            
+
                 <div class="col">
                 <label>Apelido</label>
                 <input type="text" name="last_name" class="form-control p_input" placeholder="Digite o seu apelido">
@@ -26,7 +26,7 @@
                 <label>Data de Nascimento</label>
                 <input type="date" name="date" class="form-control p_input" placeholder="Digite a data de nascimento">
                 </div>
-            
+
                 <div class="col my-1">
                 <label>Email</label>
                 <input type="email" name="email" placeholder="Digite oo seu e-mail" class="form-control p_input @error('email') é inválido @enderror value="{{old('email')}}">
@@ -36,7 +36,7 @@
                     </span>
                 @enderror
                 </div>
-            </div> 
+            </div>
             <div class="row g-3">
                 <div class="col">
                     <label>Endereço</label>
@@ -77,7 +77,7 @@
                 <div class="col">
                   <label for="result_id">Resultados</label>
                   <select name="result_id" id="result_id" class="form-control" required>
-                      <option value="">Selecione</option>
+                      <option value="Em Progresso">Selecione</option>
                           @foreach ($result as $result)
                           <option value="{{ $result->id }}">{{$result->status}}</option>
                           @endforeach
@@ -89,7 +89,7 @@
               <button type="submit" class="btn btn-primary btn-block enter-btn my-2 col-lg-4">Submeter</button>
             </div>
             <div class="d-flex">
-              <a href="{{route('candidates')}}" class="btn btn-warning btn-sm col-lg-3 mr-2">
+              <a href="{{route('aver.index')}}" class="btn btn-warning btn-sm col-lg-3 mr-2">
                 <i class="mdi mdi-reload btn-icon-prepend"></i>Volatr</a>
             </div>
           </form>

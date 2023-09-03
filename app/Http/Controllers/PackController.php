@@ -38,10 +38,10 @@ class PackController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Pack $pack)
+    public function show(Pack $pack, $id)
     {
-        $vacancies = Vacancie::all();
-        return view('pack/show', compact('vacancies'));
+        $pack = Vacancie::findOrFail($id);
+        return view('pack/show', compact('pack'));
     }
 
     /**

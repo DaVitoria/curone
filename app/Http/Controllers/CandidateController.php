@@ -51,7 +51,7 @@ class CandidateController extends Controller
     public function store(Request $request)
     {
         Candidate::create($request->all());
-        return redirect()->route('pack.index')->with('success', 'Candidatura submetida com sucesso!');
+        return redirect()->route('candidate.create')->with('success', 'Candidatura submetida com sucesso!');
     }
 
     /**

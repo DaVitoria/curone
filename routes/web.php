@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AverController;
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\MainnController;
 use App\Http\Controllers\PackController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PublicTenderController;
@@ -26,9 +27,7 @@ Route::get('/', function () {
 // })->name('vacancie');
 
 Route::get('/pages', [PageController::class, 'index'])->name('page.index');
-Route::get('/pack', [PackController::class, 'index'])->name('pack.index');
-// Route::get('/vacancie/{id}', [VacancieController::class, 'show'])->name('pack.show');
-Route::get('/pack', [PackController::class, 'show'])->name('pack.show');
+// Route::get('/pack', [PackController::class, 'index'])->name('pack.index');
 Route::get('/aver', [AverController::class, 'index'])->name('aver.index');
 
 Route::controller(AuthController::class)->group(function(){
@@ -96,4 +95,7 @@ Route::get('/results/{id}/edit', [ResultController::class, 'edit'])->name('resul
 Route::put('/results/{id}', [ResultController::class, 'update'])->name('result.update');
 Route::get('/results/{id}', [ResultController::class, 'show'])->name('result.show');
 Route::delete('/results/{id}', [ResultController::class, 'destroy'])->name('result.destroy');
+
+// Route::get('/auto', [MainnController::class, 'index'])->name('auto.index');
+Route::get('/auto', [MainnController::class, 'pain'])->name('auto.pain');
 

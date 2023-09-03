@@ -6,7 +6,7 @@
     <div class="row ">
         <div class="col-12 grid-margin">
           <div class="card">
-            <a href="{{route('pack.index')}}"><button class="btn btn-sm btn-primary">Voltar</button></a>
+            <a href="{{route('auto.pain')}}"><button class="btn btn-sm btn-primary">Voltar</button></a>
             <div class="card-body">
               <h4 class="card-title">Candidatos</h4>
               <div class="table-responsive">
@@ -36,7 +36,7 @@
                         <td>{{$value->file}}</td>
                         <td>{{$value->category}}</td>
                         <td><div class="badge badge-outline-success">{{$value->vacancie->name}}</div></td>
-                        <td> <div class="badge badge-outline-warning">{{$value->result->status}}</div> 
+                        <td> <div class="badge badge-outline-warning">{{$value->result->status}}</div>
                         </td>
                         <td>{{date('d-F-Y',strtotime($value->created_at))}}</td>
                     </tr>

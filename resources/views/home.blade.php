@@ -50,7 +50,7 @@
                                     <i class="fa-brands fa-airbnb"></i> Dentro do prazo até 10/2023
                                 </li>
                                 <li style="color: rgb(24, 118, 218)">
-                                    <i class="fa-brands fa-airbnb"></i> Aproeita a oportunidade!
+                                    <i class="fa-brands fa-airbnb"></i> Aproveita a oportunidade!
                                 </li>
                             </ul>
                         </div>
@@ -71,7 +71,7 @@
                         <ul>
                             <li><a href="/"> Home</a></li>
 							<li><a href="{{route('pack.index')}}"> Concursos</a></li>
-                            <li><a href="#"> Localização</a></li>
+                            <li><a href=""> Localização</a></li>
                             <li><a href="#"> Contactos</a></li>
                         </ul>
                     </div>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- End Main Top -->
 
     <!-- Start Main Top -->
@@ -97,7 +97,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Bem Vindo ao SDEJT de Mandlakazi</strong></h1>
                             <p class="m-b-40"><b>Juntos unidos pela uma educação qualitativa, equitativa <br> e inclusiva.</b></p>
-                            <p><a class="btn hvr-hover" href="#">Saiba mais...</a></p>
+                            <p><a class="btn hvr-hover" href="{{route('auto.pain')}}">Saiba mais...</a></p>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Bem Vindo ao SDEJT de Mandlakazi</strong></h1>
                             <p class="m-b-40"><b>Juntos unidos pela uma educação qualitativa, equitativa <br> e inclusiva.</b></p>
-                            <p><a class="btn hvr-hover" href="#">Saiba mais...</a></p>
+                            <p><a class="btn hvr-hover" href="{{route('auto.pain')}}">Saiba mais...</a></p>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Bem Vindo ao SDEJT de Mandlakazi</strong></h1>
                             <p class="m-b-40"><b>Juntos unidos pela uma educação qualitativa, equitativa <br> e inclusiva.</b></p>
-                            <p><a class="btn hvr-hover" href="#">Saiba mais...</a></p>
+                            <p><a class="btn hvr-hover" href="{{route('auto.pain')}}">Saiba mais...</a></p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Bem Vindo ao SDEJT de Mandlakazi</strong></h1>
                             <p class="m-b-40"><b>Juntos unidos pela uma educação qualitativa, equitativa <br> e inclusiva.</b></p>
-                            <p><a class="btn hvr-hover" href="#">Saiba mais...</a></p>
+                            <p><a class="btn hvr-hover" href="{{route('auto.pain')}}">Saiba mais...</a></p>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Bem Vindo ao SDEJT de Mandlakazi</strong></h1>
                             <p class="m-b-40"><b>Juntos unidos pela uma educação qualitativa, equitativa <br> e inclusiva.</b></p>
-                            <p><a class="btn hvr-hover" href="#">Saiba mais...</a></p>
+                            <p><a class="btn hvr-hover" href="{{route('auto.pain')}}">Saiba mais...</a></p>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Bem Vindo ao SDEJT de Mandlakazi</strong></h1>
                             <p class="m-b-40"><b>Juntos unidos pela uma educação qualitativa, equitativa <br> e inclusiva.</b></p>
-                            <p><a class="btn hvr-hover" href="#">Saiba mais...</a></p>
+                            <p><a class="btn hvr-hover" href="{{route('auto.pain')}}">Saiba mais...</a></p>
                         </div>
                     </div>
                 </div>

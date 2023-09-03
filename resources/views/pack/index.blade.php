@@ -9,9 +9,9 @@
     <span class="">
       <a href="{{route('aver.index')}}" class="btn btn-outline-light btn-rounded get-started-btn">Ver</a><br>
     </span>
-    <span class="">
-        <a href="{{route('pack.show')}}" class="btn btn-outline-light btn-rounded get-started-btn">Another</a><br>
-      </span>
+    {{-- <span class="">
+        <a href="{{route('pack.show', $vacancies)}}" class="btn btn-outline-light btn-rounded get-started-btn">Another</a><br>
+      </span> --}}
     </div>
     <table class="table table-sm mr-4" id="table">
       <thead class="table-dark">
